@@ -38,6 +38,6 @@ while 1 == 1:
     item_cost = num_check("What is the cost of the Item? ", item_error, 0)
     # Output item back (credit to https://www.python-course.eu/python3_formatted_output.php 
     # for info on how to out put variable as a float)
-    print("Item Cost: $%2.2f"%(item_cost))
+    print("Item Cost: {}".format(item_cost))
     print()
     break
