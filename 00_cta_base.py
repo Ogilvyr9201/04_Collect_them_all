@@ -43,7 +43,7 @@ def word_checker(question, error):
         response = input(question)
 
         # Checks how long word is
-        if len(response) == 1:
+        if len(response) <= 1:
             print(error)
             print()
             continue
@@ -117,7 +117,7 @@ item_cost_error = "<error> enter the price eg: 4 or 4.5"
 statement_generator("Collect them all", "!", "=")
 
 used_before = yes_no("Have you used the program before? ")
-if used_before == "yes":
+if used_before == "no":
     print()
     instructions()
     print()
@@ -139,7 +139,8 @@ while play_again == "true":
 
     # Turns word into a list of characters
     word_list = list(word)
-    statement_generator("TOKENS", "*", "")
+    print()
+    statement_generator("TOKENS", "*", "-")
     print(word_list)
     print()
 
